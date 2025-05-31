@@ -14,6 +14,8 @@ import java.util.Scanner;
 
 public class GoogleAdkCliApplication {
 
+    private static String USER_ID = "varshini";
+
     public static BaseAgent ROOT_AGENT = initAgent();
 
     public static BaseAgent initAgent(){
@@ -37,7 +39,7 @@ public class GoogleAdkCliApplication {
 
         Session session = runner
                 .sessionService()
-                .createSession(runner.appName(), "user")
+                .createSession(runner.appName(), USER_ID)
                 .blockingGet();
 
         try (Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8)) {
