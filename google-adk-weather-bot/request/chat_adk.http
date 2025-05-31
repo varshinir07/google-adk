@@ -1,0 +1,8 @@
+### Test Chat API - Valid Request
+POST http://localhost:8080/api/v1/chat
+Content-Type: application/json
+
+{
+  "sessionId": "varshini",
+  "question": "What is the weather in Chennai?"
+}
