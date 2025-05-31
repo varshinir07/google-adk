@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    mainClass = 'com.adk.googleadkcli.GoogleAdkCliApplication'
+}
+
+group = 'com.adk'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //Google ADK
+    implementation("com.google.adk:google-adk:0.1.0")
+    implementation("com.google.adk:google-adk-dev:0.1.0")
+
+}
+
